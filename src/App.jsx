@@ -1,10 +1,14 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Route,Router,Routes} from 'react-router-dom'
+import Register from './pages/Register'
+import Login from './pages/Login'
+import HomePage from './components/Homepage'
 const App = () => {
   return (<Routes>
-    <Route path="/" element={<h1>Home</h1>} />
-    <Route path="/login" element={<h1>login</h1>} />
+    <Route path="/" element={<HomePage/>} />
+    <Route path="/register" element={<Register/>} />
+    <Route path="/login" element={<Login/>}/>
   </Routes>
   )
 }
